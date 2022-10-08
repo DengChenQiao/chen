@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+.box{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 5px 0;
+}
+
+.panel{
+    /* width: 100px; */
+    height: 100%;
+    border-radius: 50px;
+    flex: 1;
+    margin: 0 5px;
+    position: relative;
+    transition: flex 0.5s linear;
+}
+
+.active{
+    flex: 6;
+}
+
+.box > .panel > h3{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.box .active h3{
+    opacity: 1;
+}
